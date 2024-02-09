@@ -2,33 +2,32 @@ const yesBtn = document.getElementById('yesBtn');
 const noBtn = document.getElementById('noBtn');
 const valentineImg = document.getElementById('valentineImg');
 
-const originalImgSrc = "valentinecats.gif"; // Put the original image URL here
-const hoverImgSrc = "crying-cat.gif"; // Put the hover image URL here
+const originalImgSrc = "valentinecats.gif"; 
+const hoverImgSrc = "crying-cat.gif"; 
 
 yesBtn.addEventListener('click', function() {
-    document.querySelector('.content').style.display = 'none'; // Hide the initial content
-    document.getElementById('loveMessage').className = 'show'; // Show the love message
+    document.querySelector('.content').style.display = 'none'; 
+    document.getElementById('loveMessage').className = 'show'; 
 });
 
-// Play sound on "Yes" click
 document.getElementById('yesBtn').addEventListener('click', function() {
     document.getElementById('yesSound').play();
 });
 
 noBtn.addEventListener('mouseover', function() {
-    valentineImg.src = hoverImgSrc; // Change to the hover image
+    valentineImg.src = hoverImgSrc; 
     setTimeout(() => {
-        valentineImg.src = originalImgSrc; // Change back to the original image after 1 second
-    }, 1000); // 1000 milliseconds = 1 second
+        valentineImg.src = originalImgSrc; 
+    }, 1000); 
     
     const noHoverSound = document.getElementById('noHoverSound');
-    noHoverSound.currentTime = 0; // Reset the audio to the start
-    noHoverSound.play(); // Start playing the sound
+    noHoverSound.currentTime = 0; 
+    noHoverSound.play(); 
 
     setTimeout(() => {
-        noHoverSound.pause(); // Pause the playback after 1 second
-        noHoverSound.currentTime = 0; // Optionally reset the time to start for next hover
-    }, 1000); // 1000 milliseconds = 1 second
+        noHoverSound.pause(); 
+        noHoverSound.currentTime = 0; 
+    }, 1000); 
 });
 
 noBtn.addEventListener('mouseover', function(event) {
@@ -42,6 +41,6 @@ noBtn.addEventListener('mouseover', function(event) {
 });
 
 document.getElementById('welcomeScreen').addEventListener('click', function() {
-    this.style.display = 'none'; // Hides the welcome screen
+    this.style.display = 'none'; 
 });
 
