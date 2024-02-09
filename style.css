@@ -44,43 +44,43 @@ body, html {
 
 button {
     font-family: 'Indie Flower', cursive;
-    font-weight: bold; /* Makes the text bold */
-    color: white; /* Deeper pink for the text */
-    background-color: #F8BBD0; /* Lighter pink for the background */
-    border: none; /* Removes the default border */
-    border-radius: 20px; /* Adds rounded corners */
-    padding: 10px 20px; /* Adjust padding as needed */
-    cursor: pointer; /* Changes cursor to pointer on hover */
-    transition: background-color 0.3s; /* Smooth transition for background color on hover */
+    font-weight: bold; 
+    color: white; 
+    background-color: #F8BBD0; 
+    border: none; 
+    border-radius: 20px; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #F48FB1; /* Slightly darker pink on hover for a visual effect */
+    background-color: #F48FB1; 
 }
 
 .valentine-img-container {
-    width: 300px; /* Adjust based on your images' size or desired appearance */
-    height: 200px; /* Adjust based on your images' size or desired appearance */
+    width: 300px;
+    height: 200px; 
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Ensures that the image does not exceed the container size */
+    overflow: hidden;
 }
 
 .valentine-img {
     max-width: 100%;
     max-height: 100%;
-    display: block; /* Removes bottom space/margin of the image */
+    display: block;
 }
 
 p {
     font-family: 'Indie Flower', cursive;
-    font-weight: bold; /* Makes the text bold */
-    color: pink; /* Changes the text color to pink */
+    font-weight: bold; 
+    color: pink;
 }
 
 #loveMessage {
     flex-direction: column;
-    align-items: center; /* Center align items horizontally */
-    justify-content: center; /* Center items vertically, if needed */
+    align-items: center;
+    justify-content: center;
 }
